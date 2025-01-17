@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //scene model
     const loader = new GLTFLoader();
-    const scenePath = '/timetravel.gltf';
+    const scenePath = '/timetravel.glb';
     
     loader.load(scenePath, (gltf) => {
       let model = gltf.scene;
