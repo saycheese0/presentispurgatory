@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Present is Purgatory</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.130.1/build/three.module.js",
+          "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@0.130.1/examples/jsm/"
+        }
+      }
+    </script>    
+  </head>
+  <body>
+    <header class="top-text">ELISE (愛-LING) CHEE</header>
+    <div id="spotify-widget" style="text-align: left; margin-left: 20px;">
+      <div>
+        <img 
+          src="spotifycode.jpeg" 
+          alt="Spotify Code" 
+          style="width: 230px; border-radius: 10px; display: block;" />
+        <p style="margin-top: 10px; font-size: 0.5rem; color: lightgray; font-family: 'Arial', sans-serif;">
+          Scan in the Spotify app with the camera in the search section.
+        </p>
+      </div>
+
+    <div id="landing-page">
+      <h1 class="title">The Present</h1>
+      <div class="circle">
+        <img src="/gif.gif" alt="Circular Design">
+        <button id="show-pop" class="center-button">Click Me</button>
+      </div>
+      <h2 class="subtitle">Temporal Purgatory</h2>
+      <div class="banner">
+        <div class="banner-content">
+          <p><em>present is purgatory</em> is an interactive 3D digital space that visualizes the present as a liminal dimension between the past and the future. This piece explores the emotional and philosophical tension of being “stuck in time,” grappling with the unalterable nature of the past and the uncertainty of the future. Though the connotation of the name may seem negative, enough time in this 3d space and we may realize that the present is where we are meant to be. </p>
+        </div>
+      </div>
+    </div>
+  
+    <div id="popup" class="hidden">
+      <div class="popup-content">
+        <button class="close-button" id="close-popup">X</button>
+        <h2>Welcome to purgatory... or should I say the <em>present</em>.</h2>
+        <p>Here are some tips for navigating this space:</p>
+        <p>1. To rotate, hold down the left mouse button and move.</p>
+        <p>2. To pan, hold down the right mouse button.</p>
+        <p>3. To zoom in & out, scroll the mouse wheel.</p>
+        <p>To enter the space, slowly zoom in until you are inside of the sphere that you will see in front of you.</p>
+      </div>
+    </div>
+
+    <div id="scene-container" style="display: none;">
+      <canvas id="bg"></canvas>
+    </div>
+
+    <div id="paper-popup" class="hidden">
+      <p>It looks like someone left a note here.</p>
+      <button id="readButton">Inspect</button>
+      <button id="closeButton" style="display: none;">Close</button>
+    </div>
+
+    <div id="easter-eggs" class="hidden">
+      <p>...</p>
+    </div>
+
+    <button id="exitButton" class="hidden">-> Exit Purgatory</button>
+
+    <script type="module" src="src/main.js"></script>
+    <script>
+      console.log("Inline JavaScript is working.");
+    </script>    
+  </body>
+</html>
