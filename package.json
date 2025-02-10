@@ -5,10 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "git lfs pull && vite build",
-    "preview": "vite preview",
-    "vercel-build": "curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash && sudo apt-get install git-lfs && git lfs pull && vite build"
-  },
+    "build": "vite build",
+    "preview": "vite preview"
+   },
   "devDependencies": {
     "vite": "^6.0.7"
   },
