@@ -1,4 +1,4 @@
-#Present is Purgatory
+# Present is Purgatory
 
 An interactive website designed in Figma & Blender, built with Three.js library and HTML, CSS, JS in VS Code that visualizes the present as a 3D space.
 
